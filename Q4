@@ -1,0 +1,19 @@
+programa {
+  funcao inicio() {
+    cadeia vetor[7] = {"R", "E", "M", "E", "D", "I", "O"}
+
+    inteiro vogais = 0
+    inteiro consoantes = 0
+
+    para(inteiro i = 0; i < 7; i++) {
+      se(vetor[i] == "A" ou vetor[i] == "E" ou vetor[i] == "I" ou vetor[i] == "O" ou vetor[i] == "U" ou
+         vetor[i] == "a" ou vetor[i] == "e" ou vetor[i] == "i" ou vetor[i] == "o" ou vetor[i] == "u") {
+        vogais = vogais + 1 // Incrementa o contador de vogais
+      } senao {
+        consoantes = consoantes + 1 // Incrementa o contador de consoantes
+      }
+    }
+
+    escreva("Número de vogais: ", vogais, "\nNúmero de consoantes: ", consoantes)
+  }
+}
